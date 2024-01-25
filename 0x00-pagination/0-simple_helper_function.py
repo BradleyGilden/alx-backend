@@ -7,7 +7,7 @@ Date: 25-01-2024
 from typing import Tuple
 
 
-def index_range(page: int, page_size: int) -> Tuple:
+def index_range(page: int, page_size: int) -> Tuple[int, int]:
     """returns index depending on page position and size"""
     return ((page - 1) * page_size, page * page_size)
 
