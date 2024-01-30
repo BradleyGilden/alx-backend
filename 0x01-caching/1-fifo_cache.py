@@ -13,6 +13,7 @@ class FIFOCache(BaseCaching):
     """implements FIFO caching algorithm"""
 
     def __init__(self):
+        """constructor of FIFOCache"""
         super().__init__()
         # keeps track of first key added
         self.__fifolist = []

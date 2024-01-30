@@ -13,6 +13,7 @@ class LIFOCache(BaseCaching):
     """implements LIFO caching algorithm"""
 
     def __init__(self):
+        """constructor of LIFOCache"""
         super().__init__()
         # keeps track of first key added
         self.__lifoitem = ""
