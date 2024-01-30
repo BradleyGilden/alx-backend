@@ -12,6 +12,7 @@ from base_caching import BaseCaching
 class BasicCache(BaseCaching):
     """a basic caching system with no limits"""
     def __init__(self):
+        """constructor for the BasicCache class"""
         super().__init__()
 
     def put(self, key, item):
