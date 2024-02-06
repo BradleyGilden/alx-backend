@@ -13,9 +13,9 @@ import pytz
 
 class Config:
     """class for Babel configuration"""
-    BABEL_DEFAULT_LOCALE = "en"
     LANGUAGES = ["en", "fr"]
-    TIMEZONE = "UTC"
+    BABEL_DEFAULT_LOCALE = "en"
+    BABEL_DEFAULT_TIMEZONE = "UTC"
 
 
 app = Flask(__name__)
