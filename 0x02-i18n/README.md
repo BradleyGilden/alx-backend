@@ -18,7 +18,8 @@ Internationalization (i18n) is the process of preparing software to support loca
 
   Use that class as config for your Flask app.
 * [2-app.py](2-app.py) - Create a get_locale function with the babel.localeselector decorator. Use request.accept_languages to determine the best match with our supported languages.
-* []() - 
-* []() - 
+* [3-app.py](3-app.py) - Use the _ or gettext function to parametrize your templates. Use the message IDs home_title and home_header
+* [4-app.py](4-app.py) - In this task, you will implement a way to force a particular locale by passing the locale=fr parameter to your app’s URLs.
+  * In your get_locale function, detect if the incoming request contains locale argument and ifs value is a supported locale, return it. * If not or if the parameter is not present, resort to the previous default behavior.
 * []() - 
 * []() - 
