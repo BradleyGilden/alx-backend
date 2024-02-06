@@ -62,7 +62,7 @@ class Server:
                 skip += 1
             i += 1
             next_index = i
-            # if i steps over every possible boundary
+            # if i steps over every possible boundaries
             if (i > largest_index):
                 next_index = None
                 break
