@@ -62,7 +62,7 @@ def before_request():
 @app.route("/", strict_slashes=False)
 def index():
     """returns the page index"""
-    return render_template("3-index.html")
+    return render_template("5-index.html")
 
 
 if __name__ == '__main__':
