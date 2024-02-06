@@ -6,6 +6,7 @@ Forcing Locale
 Author: Bradley Dillion Gilden
 Date: 06-02-2024
 """
+from datetime import datetime
 from flask import Flask, render_template, request, g
 from flask_babel import Babel
 import pytz
@@ -92,7 +93,8 @@ def before_request():
 @app.route("/", strict_slashes=False)
 def index():
     """returns the page index"""
-    return render_template("index.html")
+    return render_template("index.html", tz=datetime.now(get_timezone()),
+                           locale=get_locale())
 
 
 if __name__ == '__main__':
