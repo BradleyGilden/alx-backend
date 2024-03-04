@@ -9,13 +9,13 @@ client.on('ready', () => {
 });
 
 function setNewSchool(schoolName, value) {
-  client.set(schoolName, value, (err, reply) => {
+  client.set(schoolName, value, (_err, reply) => {
     print(`Reply: ${reply}`)
   })
 }
 
 function displaySchoolValue(schoolName) {
-  client.get(schoolName, (err, reply) => {
+  client.get(schoolName, (_err, reply) => {
     console.log(reply);
   });
 };
