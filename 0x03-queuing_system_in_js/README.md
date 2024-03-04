@@ -32,7 +32,9 @@
     * displaySchoolValue('Holberton');
     * setNewSchool('HolbertonSanFrancisco', '100');
     * displaySchoolValue('HolbertonSanFrancisco');
-* [2-redis_op_async.js](2-redis_op_async.js) -
+* [2-redis_op_async.js](2-redis_op_async.js) - In a file 2-redis_op_async.js, let’s copy the code from the previous exercise (1-redis_op.js)
+  Using promisify, modify the function displaySchoolValue to use ES6 async / await
+
 * []() -
 * []() -
 * []() -
