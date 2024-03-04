@@ -35,8 +35,35 @@
 * [2-redis_op_async.js](2-redis_op_async.js) - In a file 2-redis_op_async.js, let’s copy the code from the previous exercise (1-redis_op.js)
   Using promisify, modify the function displaySchoolValue to use ES6 async / await
 
-* []() -
-* []() -
+* [4-redis_advanced_op.js](4-redis_advanced_op.js) - Create Hash:
+
+  Using hset, let’s store the following:
+
+  * The key of the hash should be HolbertonSchools
+  * It should have a value for:
+    * Portland=50
+    * Seattle=80
+    * New York=20
+    * Bogota=20
+    * Cali=40
+    * Paris=2
+* [5-*.js](5-subscriber.js) - In a file named 5-subscriber.js, create a redis client:
+
+  * On connect, it should log the message Redis client connected to the server
+  * On error, it should log the message Redis client not connected to the server: ERROR MESSAGE
+  * It should subscribe to the channel holberton school channel
+  * When it receives message on the channel holberton school channel, it should log the message to the console
+  * When the message is KILL_SERVER, it should unsubscribe and quit
+
+  In a file named 5-publisher.js, create a redis client:
+
+  * On connect, it should log the message Redis client connected to the server
+  * On error, it should log the message Redis client not connected to the server: ERROR MESSAGE
+  * Write a function named publishMessage:
+    * It will take two arguments: message (string), and time (integer - in ms)
+    * After time millisecond:
+      * The function should log to the console About to send MESSAGE
+      * The function should publish to the channel holberton school channel, the message passed in argument after the time passed in arguments
 * []() -
 * []() -
 * []() -
