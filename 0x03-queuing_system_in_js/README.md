@@ -83,4 +83,3 @@
     * It will log to the console Sending notification to PHONE_NUMBER, with message: MESSAGE
   * Write the queue process that will listen to new jobs on push_notification_code:
   * Every new job should call the sendNotification function with the phone number and the message contained within the job data
-* []() -
