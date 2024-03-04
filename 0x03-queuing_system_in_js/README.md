@@ -32,7 +32,7 @@
     * displaySchoolValue('Holberton');
     * setNewSchool('HolbertonSanFrancisco', '100');
     * displaySchoolValue('HolbertonSanFrancisco');
-* []() -
+* [2-redis_op_async.js](2-redis_op_async.js) -
 * []() -
 * []() -
 * []() -
