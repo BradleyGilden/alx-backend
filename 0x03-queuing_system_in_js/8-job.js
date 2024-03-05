@@ -4,7 +4,8 @@ const createPushNotificationsJobs = (jobs, queue) => {
   }
 
   for (const job of jobs) {
-    const notification = queue.create('push_notification_code_2', job).save((err) => {
+    const notification = queue.create('push_notification_code_2', job);
+    notification.save((err) => {
     console.log(`Notification job created: ${notification.id}`);
     });
   
